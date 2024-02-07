@@ -12,11 +12,11 @@ form.addEventListener('submit', function(){
 
     const numeroContaBeneficiario = document.getElementById('numeroConta');
     const valorDeposito = document.getElementById('valorDeposito');
-    const mensagemSucesso = 'montante de: <b>${valorDeposito.value}</b> depositado para o cliente: <b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>';
+    const mensagemSucesso = `montante de: <b>${valorDeposito.value}</b> depositado para o cliente: <b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>`;
     
     formValido = validaNome(nomeBeneficiario.value)
     if (formValido){
-        const conteinerMensagemSucesso = document.querySelector('.successeMessage');
+        const conteinerMensagemSucesso = document.querySelector('.successMessage');
         conteinerMensagemSucesso.innerHTML = mensagemSucesso;
         conteinerMensagemSucesso.style.display = 'block';
 
